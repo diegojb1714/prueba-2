@@ -1,0 +1,178 @@
+*{
+  background: none;
+}
+
+body{
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    background-color: rgb(231, 230, 230);
+}
+ 
+header{
+    text-align: center;
+    align-items: center;
+}
+header img{
+  position: relative;
+}
+
+  
+  .featurette-divider {
+    margin: 5rem 0; 
+  }
+  
+  
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+ 
+    letter-spacing: -.05rem;
+  }
+  
+  
+  
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+
+/*_---------------------------------------*/
+
+#ingreso{
+  font-family: 'Roboto';
+  background: #4568DC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5c5a5c, #7f8083);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #403f41, #6f6f70);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ingreso h1{
+  text-align: center;
+  font-weight: 700;
+}
+
+#ingreso form{
+  background: #fff;
+  padding: 40px 0;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+#ingreso .form{
+  width: 100%;
+  margin: auto;
+}
+
+#ingreso form .grupo{
+  position: relative;
+  margin: 45px ;
+}
+
+#ingreso input{
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--colorTextos);
+}
+
+
+ 
+#ingreso input:focus{ 
+  outline: none;
+  color: #5e5d5d;
+}
+
+#ingreso label{
+  color: var(--colorTextos);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+#ingreso input:focus~label,
+#ingreso input:valid~label{
+  top: -14px;
+  font-size: 12px;
+  color: #2196f3;
+}
+
+#ingreso .barra{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+#ingreso .barra::before{
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #625c63, #505052);
+  transition: 0.3s ease width;
+  left: 0;
+}
+
+#ingreso input:focus~.barra::before{
+  width: 100%;
+}
+
+#ingreso .warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #888488;
+  padding-top: 20px;
+}
+
+#ingreso button{
+  font-family: 'roboto';
+  background: #4568DC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5a585a, #616161);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #757375, #494949);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+  #ingreso form{
+      width: 80%;
+  }
+}
+
